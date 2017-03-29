@@ -15,6 +15,7 @@
             PetService
                 .createPet(ownerId, $scope.petName)
                 .then(function () {
+                    $scope.petName = "";
                     showPets();
                 });
         };

@@ -12,7 +12,8 @@
         $scope.createOwner = function() {
             OwnerService
                 .createOwner($scope.ownerName)
-                .then(function() {
+                .then(function () {
+                    $scope.ownerName = "";
                     showOwners();
                 });
         };
